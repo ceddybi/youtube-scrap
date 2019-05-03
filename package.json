@@ -1,5 +1,5 @@
 {
-  "name": "youtube-scrap",
+  "name": "@vuga/youtube-scrap",
   "version": "0.0.1",
   "description": "An small lib to scap content from youtube with API",
   "main": "dist/index.js",
