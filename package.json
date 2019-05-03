@@ -13,8 +13,9 @@
     "lint": "tslint \"src/**/*.ts\" --project tsconfig.json",
     "build": "rimraf dist && tsc",
     "test-spec": "mocha dist/**/*.spec.js -R spec --bail",
-    "test": "npm run build && npm run test-spec",
-    "prepare": "npm run build"
+    "test": "npm run test-spec",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build && npm test"
   },
   "engines": {
     "node": ">=4.2.0"
